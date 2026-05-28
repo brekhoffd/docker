@@ -1,0 +1,12 @@
+services:
+  info-bot:
+    image: info-bot:i686
+    build: .
+    container_name: info-bot
+    restart: always
+
+    env_file:
+      - .env
+
+    environment:
+      TZ: Europe/Kyiv
