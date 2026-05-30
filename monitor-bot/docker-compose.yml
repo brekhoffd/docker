@@ -1,0 +1,12 @@
+services:
+  monitor-bot:
+    image: monitor-bot:i686
+    build: .
+    container_name: monitor-bot
+    restart: always
+
+    env_file:
+      - .env
+
+    environment:
+      TZ: Europe/Kyiv
