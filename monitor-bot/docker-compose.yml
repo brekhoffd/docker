@@ -1,8 +1,8 @@
 services:
-  monitor-bot:
-    image: monitor-bot:i686
+  host-monitoring:
+    image: host-monitoring:i686
     build: .
-    container_name: monitor-bot
+    container_name: host-monitoring
     restart: always
 
     env_file:
