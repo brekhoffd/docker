@@ -1,0 +1,12 @@
+services:
+  host-monitoring:
+    image: host-monitoring:i686
+    build: .
+    container_name: host-monitoring
+    restart: always
+
+    env_file:
+      - .env
+
+    environment:
+      TZ: Europe/Kyiv
